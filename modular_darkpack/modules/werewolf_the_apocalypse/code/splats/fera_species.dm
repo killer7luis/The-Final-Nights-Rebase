@@ -217,7 +217,7 @@
 
 	form_bonus_stats = list(
 		STAT_STRENGTH = 4,
-		STAT_STAMINA = 5,
+		STAT_STAMINA = 3,
 		STAT_DEXTERITY = 1,
 		STAT_MANIPULATION = -3,
 		// STAT_APPEARANCE = 0 // NOT YET SUPPORTED
@@ -314,8 +314,8 @@
 
 // Verify these nums are ttrpg accurate.
 /datum/movespeed_modifier/shifter/war
-	multiplicative_slowdown = -0.6
-// In the TTRPG Crinos has cel4, this -0.8 here is a good representation of how this looks like without it being too fast
+	multiplicative_slowdown = -0.1
+
 /datum/movespeed_modifier/shifter/dire
 	multiplicative_slowdown = -0.3
 
