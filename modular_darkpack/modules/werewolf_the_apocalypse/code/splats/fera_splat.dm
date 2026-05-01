@@ -141,9 +141,14 @@
 		// their fast healing is represented in day/days in breed-form so we just dont.
 		if(is_breed_form() && (get_breed_form_species() != /datum/species/human/shifter/war))
 			return
+<<<<<<< HEAD
 		// 2 to represent leathal***
 		owner.heal_storyteller_health(2, heal_scars = TRUE, heal_blood = TRUE)
 		COOLDOWN_START(src, passive_healing_cd, 1 TURNS)
+=======
+		owner.heal_storyteller_health(2, heal_scars = TRUE, heal_blood = TRUE)
+		COOLDOWN_START(src, passive_healing_cd, 0.1 TURNS)
+>>>>>>> master
 	var/datum/species/human/shifter/shifter_species = owner.dna.species
 	if(istype(shifter_species))
 		if(shifter_species.is_veil_breaching_form(owner) && (!shifter_species.causes_delerium || HAS_TRAIT(owner, TRAIT_PIERCED_VEIL)))
